@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box
+}
+body{
+    margin: 0;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('kru.jpg');
+    background-size: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white
+    
+}
+.header h3,.social{
+    margin-top: 100px;
+    font-size: 28
+}
+
+nav{
+    border-top:1px solid  rgb(206, 206, 206);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 22px;
+    background-color:rgb(247, 244, 244);
+    position: sticky;
+    top: 0
+
+}
+nav a{
+    text-decoration: none;
+    color: rgb(151, 155, 163);
+    padding:10px;
+    border-right:1px solid rgb(206, 206, 206) 
+
+}
+nav a:hover{
+    color: black
+
+}
+
+main{
+    border: 1px solid black;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 700px;
+    
+    
+    
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    top:35%;
+    text-align: center;
+    color: white
+}
+.container h1{
+    font-size: 44px;
+    opacity: 1.0;
+    animation-name: firsta;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.03,1.49,.92,-0.06);
+
+
+}
+
+.container h3{
+    font-size: 34px;
+    animation-name: sec;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.03,1.49,.92,-0.06);
+    animation-delay: 0.5s;
+    
+}
+
+.container p{
+    font-size: 28px;
+    background-color: rgba(0, 0,0, 0.5);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 30px;
+    animation-name: pat;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.03,1.49,.92,-0.06);
+    animation-delay: 1s
+
+}
+
+button{
+    background-color: rgb(137, 109, 44);
+    padding:1% ;
+    margin: 0px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 26px;
+    color: black;
+    transition: 1s
+
+}
+button a{
+    text-decoration: none;
+    color:black 
+}
+ 
+button:hover{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: 2px solid black
+}
+
+
+.left{
+    width: 40%;
+    padding-left: 40px;
+    text-align: justify;
+    float: left;
+    border-right: 1px solid rgb(206, 206, 206);
+    padding-right: 50px;
+    padding-top: 20px;
+    background: white;
+    height: 330px
+}
+
+.right{
+    width: 60%;
+    float:right;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 330px
+    
+}
+
+.right li a{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    padding-left: 20px;
+    font-size: 14px;
+    
+    
+    
+
+
+}
+.right li a:hover{
+    color: green
+}
+.right li{
+    color: rgb(71, 70, 70);
+    list-style-type: none
+
+}
+.bottom{
+    border-top: 1px solid rgb(206, 206, 206);
+    margin-top: 30px;
+    background-color: white
+}
+.footer{
+    width: 100%;
+    padding:30px;
+    font-size: 18px;
+    text-align: center;
+    color: wheat
+}
+
+@keyframes firsta{
+    0%{ opacity: 0;transform:translate(-200px)}
+    50%{opacity: 0.5; transform: translate(-100px)}
+    100%{opacity: 1.0;transform: translate(0px)}
+
+}
+@keyframes sec{
+    0%{opacity: 0;transform: translate(200px)}
+    50%{opacity: 0.5;transform: translate(100px)}
+    100%{opacity: 1.0;transform: translate(opx)}
+}
+
+@keyframes pat{
+    0%{opacity: 0;transform: translate(0,40px)}
+    50%{opacity: 0.5;transform: translate(0,20px)}
+    100%{opacity: 1.0;transform: translate(0,0)}
+}
+
+@media screen and (max-height: 500px){
+
+}
+
